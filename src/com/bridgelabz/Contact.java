@@ -1,4 +1,7 @@
+package com.bridgelabz;
+
 public class Contact {
+
     public Contact() {
     }
 
@@ -100,5 +103,3 @@ public class Contact {
                 '}';
     }
 }
-
-
