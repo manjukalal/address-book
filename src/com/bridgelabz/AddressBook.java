@@ -9,7 +9,10 @@ public class AddressBook {
         System.out.println("Welcome to address book");
         Contact contact = addContact();
         System.out.println(contact);
+        Contact editedContact = editContact(contact);
+        System.out.println(editedContact);
     }
+
     private static Contact addContact() {
         Contact contact = new Contact();
         System.out.println("Enter first name:");
@@ -30,6 +33,11 @@ public class AddressBook {
         contact.setMobile(Integer.parseInt(scanner.next()));
 
         return contact;
+
+    }
+    private static Contact editContact(Contact contact) {
+        System.out.println("Edit first name");
+        contact.setFirstname(scanner.next());
+        return contact;
     }
 }
-
